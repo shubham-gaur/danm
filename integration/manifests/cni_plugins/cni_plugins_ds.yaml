@@ -27,7 +27,7 @@ spec:
       volumes:
         - name: host-cni
           hostPath:
-            path: /opt/cni/bin
+            path: /usr/libexec/cni
         - name: host-net-d
           hostPath:
             path: /etc/cni/net.d
