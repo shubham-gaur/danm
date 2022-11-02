@@ -1,19 +1,20 @@
 package admit
 
 import (
-  "bytes"
-  "errors"
-  "reflect"
-  "strings"
-  "time"
-  "encoding/json"
-  "math/rand"
-  "net/http"
-  "k8s.io/api/admission/v1beta1"
-  danmtypes "github.com/nokia/danm/crd/apis/danm/v1"
-  danmclientset "github.com/nokia/danm/crd/client/clientset/versioned"
-  "github.com/nokia/danm/pkg/confman"
-  "github.com/nokia/danm/pkg/metacni"
+	"bytes"
+	"encoding/json"
+	"errors"
+	"math/rand"
+	"net/http"
+	"reflect"
+	"strings"
+	"time"
+
+	danmtypes "github.com/nokia/danm/crd/apis/danm/v1"
+	danmclientset "github.com/nokia/danm/crd/client/clientset/versioned"
+	"github.com/nokia/danm/pkg/confman"
+	"github.com/nokia/danm/pkg/metacni"
+	"k8s.io/api/admission/v1beta1"
 )
 
 var (
